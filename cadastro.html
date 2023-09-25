@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <title>Cadastro Curso</title>
+</head>
+
+<body>
+    <div class="form">
+        <form action="https://63056007dde73c0f8445a93b.mockapi.io/aluno" method="post">
+            <div class="container">
+                <fieldset>
+                    <div class="form-header">
+                        <h1>Cadastro de Aluno</h1>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite o nome..." required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="email" placeholder="Digite o Email..." required>
+                        </div>
+
+                        <div class="data">
+                            <label for="">Data de nascimento:</label>
+                            <input type="date" name="dataNascimento" required>
+                        </div>
+
+                        <div class="sexo">
+                            <label for="">Sexo:</label>
+                            <input type="radio" name="sexo" value="F" id="feminino">
+                            <label for="feminino">Feminino</label>
+                            <input type="radio" name="sexo" value="M" id="masculino">
+                            <label for="masculino">Masculino</label>
+                        </div>
+                    </div>
+
+                    <div class="cadastro-button">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+</body>
